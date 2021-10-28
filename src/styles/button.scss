@@ -1,0 +1,39 @@
+button {
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-weight: 600;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &.primary {
+        background: var(--orange);
+        color: white;
+
+        &:hover,
+        &:focus {
+            background: var(--orange-4);
+        }
+
+        &:active {
+            background: var(--orange-5);
+        }
+
+        &:disabled,
+        &:disabled:hover {
+            background: var(--orange);
+            color: white;
+            opacity: 0.5;
+        }
+    }
+
+}
+
+.bottom-right {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
